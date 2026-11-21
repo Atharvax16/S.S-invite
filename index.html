@@ -94,8 +94,10 @@ body.en .map text{font-family:'Cormorant Garamond',serif;font-size:17px;font-wei
 .hosts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 20px;max-width:560px;margin:10px auto 0;font-size:15px;color:#E8D6B8}
 .kid{margin-top:28px;font-size:20px;color:var(--gold)}
 .made{margin-top:30px;font-size:14px;color:#BCA5C0}
+.thanks{max-width:520px;margin:34px auto 0;padding:20px 22px;border:1px solid var(--gold);border-radius:14px}
+.thanks p{margin:10px 0 0;font-size:16px}
 /* intro pouch */
-.intro{position:fixed;inset:0;z-index:20;background:var(--plum);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:24px;transition:opacity .7s ease .9s,visibility 0s linear 1.6s}
+.intro{position:fixed;inset:0;z-index:20;background:var(--plum);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:24px;transition:opacity .7s ease 2.6s,visibility 0s linear 3.3s}
 .intro.open{opacity:0;visibility:hidden}
 .intro .kath{position:absolute;left:0;right:0}
 .intro .kath.t{top:0}.intro .kath.b{bottom:0}
@@ -110,7 +112,15 @@ body.en .map text{font-family:'Cormorant Garamond',serif;font-size:17px;font-wei
 .sugar i{position:absolute;width:7px;height:7px;background:#fff;border:1px solid #E3BFB6;transform:rotate(45deg);opacity:0}
 .intro.open .sugar i{animation:burst 1.2s ease-out forwards}
 @keyframes burst{0%{opacity:0;transform:translate(0,0) rotate(45deg)}15%{opacity:1}100%{opacity:0;transform:translate(var(--x),var(--y)) rotate(200deg)}}
-.hint{font-size:18px;color:var(--gold)}
+.hint{font-size:18px;color:var(--gold);transition:opacity .3s}
+.intro.open .hint{opacity:0}
+.hoy{position:absolute;left:0;right:0;bottom:5%;text-align:center;pointer-events:none;opacity:0}
+.hoy .call{font-size:17px;color:#E8D6B8;padding:0 20px}
+.hoy .resp{font-size:clamp(44px,11vw,72px);color:var(--gold);line-height:1.15;transform:scale(.6);opacity:0}
+.hoy .gloss{font-size:14px;color:#BCA5C0}
+.intro.open .hoy{opacity:1;transition:opacity .4s .3s}
+.intro.open .hoy .resp{animation:hoy .7s cubic-bezier(.2,1.6,.4,1) 1.1s forwards}
+@keyframes hoy{to{transform:scale(1);opacity:1}}
 .hint .hand{display:block;font-size:15px;color:#E8D6B8}
 /* little brother's corner */
 .fun{background:var(--silk);color:var(--ink);overflow:hidden}
@@ -139,7 +149,7 @@ body.en .map text{font-family:'Cormorant Garamond',serif;font-size:17px;font-wei
 .modal .paper{background:var(--cream);color:var(--ink);max-width:440px;border:2px solid var(--gold);border-radius:14px;padding:28px 24px 22px;text-align:center}
 .modal h3{margin:0 0 10px;font-size:28px;color:var(--mag)}
 .modal .btn{color:var(--plum);margin-top:16px}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.intro{transition:opacity .3s,visibility 0s linear .3s}.pouch .tie,.pouch .frill,.meter .fill{transition:none}.intro.open .sugar i,.pulse,.danger.wiggle{animation:none}.ready .bar{transition:none}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.intro{transition:opacity .3s,visibility 0s linear .3s}.pouch .tie,.pouch .frill,.meter .fill{transition:none}.intro.open .sugar i,.pulse,.danger.wiggle{animation:none}.ready .bar{transition:none}.intro.open .hoy .resp{animation:none;opacity:1;transform:none}}
 @media(max-width:600px){.card .dev,.hosts{grid-template-columns:minmax(0,1fr)}.count{gap:6px}.map{padding:4px}.map text{font-size:19px}body.en .map text{font-size:21px}.map text.h{font-size:16px}}
 </style>
 </head>
@@ -167,6 +177,7 @@ body.en .map text{font-family:'Cormorant Garamond',serif;font-size:17px;font-wei
     </svg>
     <span class="sugar" id="sugar"></span>
   </button>
+  <div class="hoy" aria-live="polite"><div class="call"><span class="mr">बा देवा महाराजा… सगळं गोड होऊ दे रे महाराजा!</span><span class="en">“O Lord, let everything be sweet!”</span></div><div class="resp disp">होय महाराजा!</div><div class="gloss en">our Konkan prayer response — “Yes, O Lord!”</div></div>
   <div class="hint"><span class="mr">गाठ सोडा, निमंत्रण उघडा</span><span class="en">Untie the knot to open</span><span class="hand mr">पुड्यावर टॅप करा</span><span class="hand en">tap the pouch</span></div>
   <div class="kath b up"></div>
 </div>
@@ -305,7 +316,7 @@ body.en .map text{font-family:'Cormorant Garamond',serif;font-size:17px;font-wei
         <div class="row"><span><span class="mr">अथर्व सगळ्यात आधी नाचणार</span><span class="en">Atharva dances first</span></span><b><span class="mr">९९.७%</span><span class="en">99.7%</span></b></div>
         <div class="row"><span><span class="mr">अथर्व भावुक होणार (आणि नंतर नाकारणार)</span><span class="en">Atharva gets emotional (and later denies it)</span></span><b><span class="mr">८५%</span><span class="en">85%</span></b></div>
         <div class="row"><span><span class="mr">नाचणाऱ्यांची संख्या · अनिश्चितता: शून्य</span><span class="en">Number of dancers · uncertainty: zero</span></span><b><span class="mr">सगळे</span><span class="en">Everyone</span></b></div>
-        <small><span class="mr">जन्मापासूनच्या सगळ्या कौटुंबिक कार्यक्रमांवर प्रशिक्षित मॉडेल. — अथर्व, AI विद्यार्थी</span><span class="en">Model trained on every family function since birth. — Atharva, AI student</span></small>
+        <small><span class="mr">जन्मापासूनच्या सगळ्या कौटुंबिक कार्यक्रमांवर प्रशिक्षित मॉडेल.</span><span class="en">Model trained on every family function since birth.</span></small>
       </div>
       <div class="fcard ready">
         <h3 class="disp"><span class="mr">डान्स-फ्लोअर तयारी मीटर</span><span class="en">Dance-floor readiness meter</span></h3>
@@ -328,10 +339,15 @@ body.en .map text{font-family:'Cormorant Garamond',serif;font-size:17px;font-wei
       <div class="gold" style="font-size:15px"><i>वरील विनंतीस मान देऊन अगत्य येण्याची कृपा करावी.</i></div>
       <div class="hosts">
         <span>श्री. मीनानाथ महादेव पराडकर</span><span>सौ. शुभदा मीनानाथ पराडकर</span>
-        <span>श्री. महेश विष्णू कुपकर (मावसे)</span><span>सौ. माही महेश कुपकर (मावशी)</span>
+        <span>श्री. महेश विष्णू कुपकर (छोटे पप्पा)</span><span>सौ. शिल्पा महेश कुपकर (छोटी आई)</span>
         <span>श्री. मिलिंद मीनानाथ पराडकर (मामा)</span><span>सौ. मीनाक्षी मिलिंद पराडकर (मामी)</span>
         <span>गं. भा. अपर्णा अरुण केरकर (आत्या)</span><span>समस्त कोचरेकर परिवार आणि आप्तेष्ट मित्रमंडळी</span>
       </div>
+    </div>
+    <div class="thanks">
+      <div class="disp gold" style="font-size:24px"><span class="mr">छोटी आई आणि छोटे पप्पा</span><span class="en">Choti Aai &amp; Chote Papa</span></div>
+      <div style="font-size:15px;color:#E8D6B8;margin-top:2px"><span class="mr">सौ. शिल्पा व श्री. महेश कुपकर</span><span class="en">Mrs. Shilpa &amp; Mr. Mahesh Kupkar</span></div>
+      <p><span class="mr">लहानपणापासून तुम्ही आम्हाला स्वतःच्या मुलांसारखं वाढवलंत — कपड्यांपासून ते प्रत्येक गोष्टीपर्यंत. तुमचं घर नेहमीच आमचं दुसरं घर होतं. आजचा हा आनंद तुमचाही आहे.</span><span class="en">You raised us as your own — from our clothes to everything else, and your home was always our second home. Today’s joy is yours too.</span></p>
     </div>
     <div class="kid hand"><span class="mr">माझ्या ताईच्या साखरपुड्याला यायचं हं…! — कु. अथर्व व हर्षिता</span><span class="en">“Do come for my Tai’s engagement!” — Atharva &amp; Harshita</span></div>
     <div class="made"><span class="mr">ताईसाठी प्रेमाने बनवले — अथर्व</span><span class="en">Made with love for Tai — Atharva</span></div>
@@ -357,6 +373,7 @@ body.en .map text{font-family:'Cormorant Garamond',serif;font-size:17px;font-wei
   const EVENT = new Date('2027-02-07T17:00:00+05:30');
   const END = new Date('2027-02-07T21:00:00+05:30');
   const START = new Date('2026-10-01T00:00:00+05:30'); // the day the journey "began" — set to the day the match was fixed
+  const HOY_URL = ''; // optional: a recording of the family shouting "होय महाराजा!" (e.g. 'hoy-maharaja.mp3')
   const RSVP_URL = 'https://docs.google.com/forms/d/e/1FAIpQLSdhfT4Jv_-E0pmry926ONKQq4OxNeCQ-X9sDQCji3Ph5tx94Q/viewform'; // Google Form RSVP
 
   const body = document.body;
@@ -388,7 +405,8 @@ body.en .map text{font-family:'Cormorant Garamond',serif;font-size:17px;font-wei
   }
   document.getElementById('untie').addEventListener('click', () => {
     intro.classList.add('open');
-    setTimeout(() => body.classList.remove('locked'), reduce ? 300 : 1500);
+    setTimeout(() => body.classList.remove('locked'), reduce ? 300 : 3200);
+    if (HOY_URL) { try { const h = new Audio(HOY_URL); h.play().catch(() => {}); } catch (e) {} }
   });
 
   // countdown
