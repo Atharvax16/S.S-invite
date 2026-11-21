@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="mr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>साक्षी ❋ संकेत — साखरपुडा</title>
+<meta name="description" content="साक्षी आणि संकेत यांचा साखरपुडा · रविवार, ७ फेब्रुवारी २०२७ · पराग हॉल, भांडुप (प.), मुंबई">
+<meta property="og:title" content="साक्षी ❋ संकेत — साखरपुडा · 7 Feb 2027">
+<meta property="og:description" content="Sakshi &amp; Sanket's engagement · Sunday, 7 February 2027, 5–9 pm · Parag Hall, Bhandup (W), Mumbai">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://atharvax16.github.io/S.S-invite/">
+<meta property="og:image" content="https://atharvax16.github.io/S.S-invite/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#2B0F33">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Kalam:wght@400&family=Rozha+One&family=Tiro+Devanagari+Marathi:ital@0;1&display=swap">
+<style>
+/* VOICE: warm, festive, formal-elegant — a Konkani family's invitation, made by the brother
+   IDEA: a Paithani sari pallu you scroll through; it opens like a tied sakharpuda pouch
+   PICTURE: the gold-tied sugar pouch, then a Konkan map tracking two families towards Bhandup
+   COLOUR and TYPE: plum ground, magenta, temple gold, cream silk; Rozha One + Tiro Devanagari, Cormorant for English
+   LAYOUT: one centred column of full-width bands, each a woven border apart */
+:root{color-scheme:dark;--plum:#2B0F33;--mag:#8E1E52;--gold:#D9B062;--gold2:#B8892F;--cream:#FBF5EA;--silk:#F3E6EC;--green:#2F7A45;--sea:#DCE8E3;--ink:#2B0F33;--soft:#5B4560}
+*{box-sizing:border-box;min-width:0}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--plum);color:var(--cream);font:17px/1.6 'Tiro Devanagari Marathi','Noto Serif Devanagari',serif;overflow-x:clip}
+body.en{font-family:'Cormorant Garamond',Georgia,serif;font-size:19px}
+body.locked{overflow:hidden}
+[hidden]{display:none!important}
+body.en .mr,body:not(.en) .en{display:none}
+a{color:inherit}
+.disp{font-family:'Rozha One','Tiro Devanagari Marathi',serif;font-weight:400}
+body.en .disp{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600}
+.hand{font-family:Kalam,cursive}
+.band{padding:clamp(40px,7vw,88px) max(5vw,18px);text-align:center}
+.wrap{max-width:720px;margin:0 auto}
+.kath{height:14px;background:linear-gradient(135deg,var(--gold) 25%,transparent 25%) -7px 0/14px 14px,linear-gradient(225deg,var(--gold) 25%,transparent 25%) -7px 0/14px 14px,var(--mag)}
+.kath.up{transform:scaleY(-1)}
+h1,h2{margin:0;line-height:1.1;text-wrap:balance}
+h2{font-size:clamp(30px,5vw,44px);color:var(--mag)}
+.gold{color:var(--gold)}
+/* top bar */
+.bar{position:sticky;top:0;z-index:5;display:flex;justify-content:space-between;align-items:center;padding:10px max(4vw,14px);background:var(--plum);border-bottom:1px solid #4a2552}
+.mark{font-size:20px;color:var(--gold)}
+.lang{display:flex;border:1px solid var(--gold);border-radius:999px;overflow:hidden}
+.lang button{font:inherit;font-size:16px;min-height:40px;padding:0 16px;border:0;background:transparent;color:var(--gold);cursor:pointer}
+.lang button[aria-pressed=true]{background:var(--gold);color:var(--plum)}
+button:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+/* hero */
+.hero{padding-top:clamp(36px,6vw,72px)}
+.hero h1{font-size:clamp(58px,13vw,104px);color:var(--gold);line-height:1.05}
+.names{display:flex;align-items:center;justify-content:center;gap:clamp(12px,3vw,26px);margin:14px 0 6px;flex-wrap:wrap}
+.names span{font-size:clamp(40px,9vw,64px);line-height:1.1}
+.names i{font-style:normal;color:var(--gold);font-size:22px}
+.when{display:inline-block;margin:14px 0 4px;padding:6px 18px;border-block:1px solid var(--gold);font-size:19px}
+.where{color:#E8D6B8;font-size:16px}
+.count{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;max-width:460px;margin:30px auto 0}
+.count div{border:1px solid var(--gold);border-radius:10px;padding:12px 4px 8px}
+.count b{display:block;font-size:clamp(28px,7vw,40px);line-height:1.1;color:var(--gold);font-weight:400;font-variant-numeric:tabular-nums}
+.count small{font-size:14px;color:#E8D6B8}
+.done{margin-top:28px;font-size:24px;color:var(--gold)}
+/* tracker */
+.track{background:var(--cream);color:var(--ink)}
+.track p{max-width:560px;margin:10px auto 0;color:var(--soft)}
+.map{max-width:620px;margin:26px auto 0;background:#fff;border:1px solid #E7D7C2;border-radius:16px;padding:10px}
+.map svg{display:block;width:100%;height:auto}
+.map text{font-family:'Tiro Devanagari Marathi',serif;font-size:15px;fill:var(--ink)}
+body.en .map text{font-family:'Cormorant Garamond',serif;font-size:17px;font-weight:600}
+.map text.h{font-family:Kalam,cursive;font-size:13px;font-weight:400}
+.meter{max-width:560px;margin:22px auto 0;text-align:start}
+.meter .row{display:flex;justify-content:space-between;gap:12px;font-size:16px}
+.meter .rail{height:10px;border-radius:9px;background:#EADFD0;overflow:hidden;margin-top:6px}
+.meter .fill{height:100%;width:0;background:linear-gradient(90deg,var(--mag),var(--gold2));border-radius:9px;transition:width 1.6s ease}
+.pulse{transform-box:fill-box;transform-origin:center;animation:pulse 1.8s ease-out infinite}
+@keyframes pulse{from{transform:scale(1);opacity:.7}to{transform:scale(2.6);opacity:0}}
+/* invitation */
+.card{max-width:640px;margin:0 auto;padding:clamp(26px,5vw,48px) clamp(18px,4vw,40px);border:1px solid var(--gold);outline:1px solid var(--gold);outline-offset:6px;border-radius:4px}
+.card .dev{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 18px;font-size:14px;color:#E8D6B8;margin:8px 0 18px}
+.card .lead{font-size:clamp(22px,4.4vw,28px);color:var(--gold);margin:0 0 4px}
+.card .who{font-size:clamp(30px,6vw,40px);margin-top:16px;line-height:1.2}
+.card .par{font-size:14.5px;color:#E8D6B8}
+.card .and{color:var(--gold);margin:8px 0}
+.card .body{margin:18px 0 0}
+/* visit + rsvp */
+.visit{background:var(--mag)}
+.visit h2{color:var(--cream)}
+.btns{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:22px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border-radius:999px;border:1px solid var(--gold);color:var(--cream);text-decoration:none;font-size:17px;background:transparent;font-family:inherit;cursor:pointer}
+.btn.main{background:var(--gold);color:var(--plum);border-color:var(--gold)}
+.note{margin-top:12px;font-size:15px;color:#F6DCE7;min-height:1.6em}
+/* footer */
+.foot{padding-bottom:56px}
+.hosts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 20px;max-width:560px;margin:10px auto 0;font-size:15px;color:#E8D6B8}
+.kid{margin-top:28px;font-size:20px;color:var(--gold)}
+.made{margin-top:30px;font-size:14px;color:#BCA5C0}
+/* intro pouch */
+.intro{position:fixed;inset:0;z-index:20;background:var(--plum);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:24px;transition:opacity .7s ease .9s,visibility 0s linear 1.6s}
+.intro.open{opacity:0;visibility:hidden}
+.intro .kath{position:absolute;left:0;right:0}
+.intro .kath.t{top:0}.intro .kath.b{bottom:0}
+.pouch{position:relative;border:0;background:none;padding:0;cursor:pointer;width:min(300px,70vw)}
+.pouch svg{display:block;width:100%;height:auto;overflow:visible}
+.pouch .tie,.pouch .frill{transform-box:fill-box;transition:transform .9s cubic-bezier(.3,.7,.2,1),opacity .7s}
+.pouch .tie{transform-origin:center}
+.pouch .frill{transform-origin:50% 100%}
+.intro.open .tie{transform:translateY(60px) rotate(-18deg);opacity:0}
+.intro.open .frill{transform:scale(1.18,1.25) rotate(-3deg)}
+.sugar{position:absolute;left:50%;top:26%;width:0;height:0}
+.sugar i{position:absolute;width:7px;height:7px;background:#fff;border:1px solid #E3BFB6;transform:rotate(45deg);opacity:0}
+.intro.open .sugar i{animation:burst 1.2s ease-out forwards}
+@keyframes burst{0%{opacity:0;transform:translate(0,0) rotate(45deg)}15%{opacity:1}100%{opacity:0;transform:translate(var(--x),var(--y)) rotate(200deg)}}
+.hint{font-size:18px;color:var(--gold)}
+.hint .hand{display:block;font-size:15px;color:#E8D6B8}
+/* little brother's corner */
+.fun{background:var(--silk);color:var(--ink);overflow:hidden}
+.fun p.sub{margin:8px auto 0;color:var(--soft)}
+.danger{display:block;margin:28px auto 0;width:184px;height:184px;border-radius:50%;border:6px solid #fff;background:radial-gradient(circle at 35% 30%,#C9406B,#8E1E52 70%);color:#fff;font:inherit;font-size:19px;line-height:1.3;cursor:pointer;box-shadow:0 10px 0 #5E1236,0 16px 30px rgba(43,15,51,.3);transition:transform .1s,box-shadow .1s}
+.danger:active{transform:translateY(8px);box-shadow:0 2px 0 #5E1236,0 6px 14px rgba(43,15,51,.3)}
+.danger.wiggle{animation:wig 2.4s ease-in-out infinite}
+@keyframes wig{0%,80%,100%{rotate:0deg}84%{rotate:-6deg}88%{rotate:6deg}92%{rotate:-4deg}96%{rotate:3deg}}
+.danger .d2,.danger.pressed .d1{display:none}.danger.pressed .d2{display:inline}
+.funbox{display:grid;gap:18px;max-width:680px;margin:34px auto 0;text-align:start}
+.fcard{background:#fff;border:1px solid #E4CFD9;border-radius:16px;padding:20px 22px}
+.fcard h3{margin:0 0 10px;font-size:23px;line-height:1.2;color:var(--mag)}
+.fcard ol{margin:0;padding-inline-start:1.4em}.fcard li{margin:6px 0}
+.pred .row{display:flex;justify-content:space-between;align-items:baseline;gap:14px;padding:9px 0;border-top:1px dashed #E4CFD9}
+.pred .row b{font-size:26px;color:var(--mag);white-space:nowrap;font-weight:400}
+.pred small,.ready small{display:block;color:var(--soft);font-size:14px;margin-top:10px}
+.ready .r{margin:12px 0}
+.ready .lbl{display:flex;justify-content:space-between;gap:12px}
+.ready .rail{height:12px;background:#EFE3E9;border-radius:9px;position:relative;margin-top:5px}
+.ready .bar{position:absolute;left:0;top:0;bottom:0;width:0;border-radius:9px;background:var(--mag);transition:width 1.6s cubic-bezier(.2,.8,.2,1)}
+.ready .bar.over{background:repeating-linear-gradient(-45deg,var(--gold2) 0 10px,var(--gold) 10px 20px)}
+.confetti i{position:fixed;top:-20px;width:9px;height:14px;z-index:30;pointer-events:none;animation:fall var(--d) linear var(--w) forwards}
+@keyframes fall{to{transform:translate(var(--dx),110vh) rotate(720deg)}}
+.mark{background:none;border:0;padding:4px 2px;cursor:pointer}
+.modal{position:fixed;inset:0;z-index:40;background:rgba(43,15,51,.75);display:flex;align-items:center;justify-content:center;padding:20px}
+.modal .paper{background:var(--cream);color:var(--ink);max-width:440px;border:2px solid var(--gold);border-radius:14px;padding:28px 24px 22px;text-align:center}
+.modal h3{margin:0 0 10px;font-size:28px;color:var(--mag)}
+.modal .btn{color:var(--plum);margin-top:16px}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.intro{transition:opacity .3s,visibility 0s linear .3s}.pouch .tie,.pouch .frill,.meter .fill{transition:none}.intro.open .sugar i,.pulse,.danger.wiggle{animation:none}.ready .bar{transition:none}}
+@media(max-width:600px){.card .dev,.hosts{grid-template-columns:minmax(0,1fr)}.count{gap:6px}.map{padding:4px}.map text{font-size:19px}body.en .map text{font-size:21px}.map text.h{font-size:16px}}
+</style>
+</head>
+<body class="locked">
+<div class="intro" id="intro">
+  <div class="kath t"></div>
+  <button class="pouch" id="untie" aria-label="निमंत्रण उघडा / Open the invitation">
+    <svg viewBox="30 0 320 440" aria-hidden="true">
+      <g class="frill">
+        <path d="M150 112 C140 90 112 70 104 40 C124 52 132 30 150 18 C158 40 170 22 190 8 C204 26 218 18 232 20 C240 40 262 46 276 40 C262 72 240 92 230 112 Z" fill="#FFF9F0" stroke="#D9B062" stroke-width="1.6"/>
+        <path d="M150 22 C160 50 166 80 168 110 M190 10 V110 M232 22 C222 50 216 80 212 110" fill="none" stroke="#E3BFB6" stroke-width="1.2"/>
+      </g>
+      <path d="M146 124 C110 150 52 210 46 300 C40 380 100 428 190 428 C280 428 340 380 334 300 C328 210 270 150 234 124 Q190 134 146 124 Z" fill="#FFF9F0" stroke="#D9B062" stroke-width="1.6"/>
+      <path d="M120 162 C110 220 106 300 118 404 M260 162 C270 220 274 300 262 404" fill="none" stroke="#E3BFB6" stroke-width="1.2"/>
+      <rect x="74" y="246" width="232" height="136" rx="14" fill="#8E1E52"/>
+      <rect x="82" y="254" width="216" height="120" rx="10" fill="none" stroke="#E8C88E" stroke-dasharray="4 4"/>
+      <text x="190" y="306" text-anchor="middle" font-family="Rozha One, serif" font-size="40" fill="#F6DDA9">साखरपुडा</text>
+      <text x="190" y="348" text-anchor="middle" font-family="Rozha One, serif" font-size="24" fill="#FFF3E3">साक्षी ❋ संकेत</text>
+      <g class="tie">
+        <path d="M146 110 Q190 120 234 110 L234 124 Q190 134 146 124 Z" fill="#D9B062" stroke="#8A6326"/>
+        <path d="M190 118 C170 98 144 106 154 124 C160 134 178 128 190 118 Z M190 118 C210 98 236 106 226 124 C220 134 202 128 190 118 Z" fill="#D9B062" stroke="#8A6326"/>
+        <path d="M188 122 C182 142 174 154 164 166 M192 122 C200 142 208 152 218 164" fill="none" stroke="#D9B062" stroke-width="2.6" stroke-linecap="round"/>
+        <circle cx="190" cy="119" r="6" fill="#B0853A" stroke="#8A6326"/>
+      </g>
+    </svg>
+    <span class="sugar" id="sugar"></span>
+  </button>
+  <div class="hint"><span class="mr">गाठ सोडा, निमंत्रण उघडा</span><span class="en">Untie the knot to open</span><span class="hand mr">पुड्यावर टॅप करा</span><span class="hand en">tap the pouch</span></div>
+  <div class="kath b up"></div>
+</div>
+
+<header class="bar">
+  <button class="mark disp" id="mark" aria-label="साक्षी आणि संकेत">स ❋ स</button>
+  <div class="lang" role="group" aria-label="भाषा / Language">
+    <button id="bMr" aria-pressed="true">मराठी</button><button id="bEn" aria-pressed="false">English</button>
+  </div>
+</header>
+
+<main>
+<section class="band hero">
+  <div class="wrap">
+    <div class="gold"><span class="mr">॥ श्री गजानन प्रसन्न ॥</span><span class="en"><i>With the blessings of Shri Ganesh</i></span></div>
+    <h1 class="disp"><span class="mr">साखरपुडा</span><span class="en">Sakharpuda</span></h1>
+    <div class="names disp"><span class="mr">साक्षी</span><span class="en">Sakshi</span><i aria-hidden="true">❋</i><span class="mr">संकेत</span><span class="en">Sanket</span></div>
+    <div class="when"><span class="mr">रविवार, ७ फेब्रुवारी २०२७ · सायं. ५ ते रात्री ९</span><span class="en">Sunday, 7 February 2027 · 5 pm – 9 pm</span></div>
+    <div class="where"><span class="mr">पराग हॉल, भांडुप (प.), मुंबई</span><span class="en">Parag Hall, Bhandup (West), Mumbai</span></div>
+    <div class="count" id="count" aria-live="off">
+      <div><b id="cD">–</b><small><span class="mr">दिवस</span><span class="en">days</span></small></div>
+      <div><b id="cH">–</b><small><span class="mr">तास</span><span class="en">hours</span></small></div>
+      <div><b id="cM">–</b><small><span class="mr">मिनिटे</span><span class="en">minutes</span></small></div>
+      <div><b id="cS">–</b><small><span class="mr">सेकंद</span><span class="en">seconds</span></small></div>
+    </div>
+    <div class="done" id="done" hidden></div>
+  </div>
+</section>
+<div class="kath"></div>
+
+<section class="band track" id="journey">
+  <div class="wrap">
+    <h2 class="disp"><span class="mr">दोन गावं, एक नातं</span><span class="en">Two villages, one bond</span></h2>
+    <p><span class="mr">कोचऱ्याहून साक्षी आणि कामथ्याहून संकेत — दोघांचा प्रवास भांडुपच्या दिशेने रोज थोडा पुढे सरकतोय.</span><span class="en">Sakshi from Kochara, Sanket from Kamathe — both journeys inch towards Bhandup a little more every day.</span></p>
+    <div class="map">
+      <svg viewBox="0 0 480 300" role="img" aria-label="Konkan map tracking the journeys from Kochara and Kamathe to Bhandup, Mumbai">
+        <path d="M0 0 H178 C168 22 186 44 178 66 S196 110 204 140 S214 178 224 204 S244 250 252 300 H0 Z" fill="#DCE8E3"/>
+        <path d="M178 0 C168 22 186 44 178 66 S196 110 204 140 S214 178 224 204 S244 250 252 300" fill="none" stroke="#2B0F33" stroke-width="1.2" opacity=".6"/>
+        <g fill="none" stroke="#2F6B66" stroke-width="1.2" stroke-linecap="round" opacity=".5"><path d="M30 46q6-5 12 0t12 0M118 30q6-5 12 0t12 0M58 104q6-5 12 0t12 0M132 128q6-5 12 0t12 0M150 238q6-5 12 0t12 0M44 262q6-5 12 0t12 0"/></g>
+        <text x="20" y="214" class="h" fill="#2F6B66"><tspan class="mr">अरबी समुद्र</tspan><tspan class="en">Arabian Sea</tspan></text>
+        <g fill="none" stroke="#2F7A45" stroke-width="1.5" stroke-linecap="round">
+          <path d="M392 104 l14-22 l10 14 l12-20 l16 28"/>
+          <path id="palm" d="M318 106 Q315 92 320 78 M320 78 q-9-6-18 2 M320 78 q9-7 18 1 M320 78 q-5-11-14-12 M320 78 q6-11 15-10"/>
+          <use href="#palm" x="86" y="120"/>
+        </g>
+        <path d="M268 262 C232 236 212 196 220 150 C226 112 196 78 205 38" fill="none" stroke="#8E1E52" stroke-width="2" stroke-dasharray="1 6" stroke-linecap="round" opacity=".45"/>
+        <path d="M262 150 C270 110 240 70 205 38" fill="none" stroke="#2F7A45" stroke-width="2" stroke-dasharray="1 6" stroke-linecap="round" opacity=".45"/>
+        <path id="rS" d="M268 262 C232 236 212 196 220 150 C226 112 196 78 205 38" fill="none" stroke="#8E1E52" stroke-width="3" stroke-linecap="round"/>
+        <path id="rK" d="M262 150 C270 110 240 70 205 38" fill="none" stroke="#2F7A45" stroke-width="3" stroke-linecap="round"/>
+        <circle cx="268" cy="262" r="5" fill="#8E1E52"/><circle cx="262" cy="150" r="5" fill="#2F7A45"/>
+        <circle cx="205" cy="38" r="10" fill="#FBF5EA" stroke="#B8892F" stroke-width="2.6"/><path d="M205 20l5 6-5 6-5-6z" fill="#B8892F"/>
+        <g id="dS"><circle r="7" fill="#8E1E52" class="pulse"/><circle r="6" fill="#8E1E52" stroke="#fff" stroke-width="2"/></g>
+        <g id="dK"><circle r="7" fill="#2F7A45" class="pulse"/><circle r="6" fill="#2F7A45" stroke="#fff" stroke-width="2"/></g>
+        <text x="224" y="40"><tspan class="mr">भांडुप, मुंबई</tspan><tspan class="en">Bhandup, Mumbai</tspan></text>
+        <text x="224" y="58" class="h" fill="#8E1E52"><tspan class="mr">इथे जुळणार नातं!</tspan><tspan class="en">where two families become one</tspan></text>
+        <text x="278" y="152"><tspan class="mr">कामथे, चिपळूण</tspan><tspan class="en">Kamathe, Chiplun</tspan></text>
+        <text x="278" y="170" class="h" fill="#2F7A45"><tspan class="mr">संकेतचं गाव</tspan><tspan class="en">Sanket’s village</tspan></text>
+        <text x="284" y="266"><tspan class="mr">कोचरा, वेंगुर्ला</tspan><tspan class="en">Kochara, Vengurla</tspan></text>
+        <text x="284" y="284" class="h" fill="#8E1E52"><tspan class="mr">साक्षीचं गाव</tspan><tspan class="en">Sakshi’s village</tspan></text>
+      </svg>
+    </div>
+    <div class="meter">
+      <div class="row"><span><span class="mr">प्रवास पूर्ण</span><span class="en">Journey complete</span></span><strong id="pct">–</strong></div>
+      <div class="rail"><div class="fill" id="fill"></div></div>
+      <p id="trackNote" style="margin:10px 0 0;font-size:16px"></p>
+    </div>
+  </div>
+</section>
+<div class="kath up"></div>
+
+<section class="band" id="invite">
+  <div class="card">
+    <div class="mr">
+      <div class="gold">॥ श्री गजानन प्रसन्न ॥</div>
+      <div class="dev"><span>॥ श्री डुंगेश्वर प्रसन्न ॥</span><span>॥ रांगोबा प्रसन्न ॥</span><span>॥ भावई देवी प्रसन्न ॥</span><span>॥ केळबाई देवी प्रसन्न ॥</span></div>
+      <p class="lead disp">हे आमंत्रण आग्रहाचे, प्रेमाचे, जिव्हाळ्याचे…</p>
+      <div>आमच्या मुलीच्या साखरपुड्याचे! सप्रेम नमस्कार वि. वि.<br>श्री कृपेकरून आमची सुकन्या</div>
+      <div class="who disp">चि. सौ. का. साक्षी</div>
+      <div class="par">सौ. नेहा व श्री. तुकाराम विठ्ठल कोचरेकर यांची सुकन्या<br>मु. पो. कोचरा, ता. वेंगुर्ला, जि. सिंधुदुर्ग</div>
+      <div class="and">आणि</div>
+      <div class="who disp" style="margin-top:0">चि. संकेत</div>
+      <div class="par">सौ. शुभांगी व श्री. सुभाष रामचंद्र खेडेकर यांचे सुपुत्र<br>मु. पो. कामथे, माटेवाडी, ता. चिपळूण, जि. रत्नागिरी</div>
+      <div class="lead disp" style="margin-top:18px;font-size:22px">॥ यांचा साखरपुडा ॥</div>
+      <p class="body">रविवार, दि. ७ फेब्रुवारी २०२७ रोजी सायंकाळी ५ ते रात्री ९ या वेळेत करण्याचे योजिले आहे. तरी या मंगल प्रसंगी सहकुटुंब, सहपरिवार, मित्रमंडळींसह उपस्थित राहून वधू-वरास शुभाशीर्वाद द्यावेत, ही नम्र विनंती.</p>
+    </div>
+    <div class="en">
+      <div class="gold"><i>With the blessings of Shri Ganesh and our family deities</i></div>
+      <p class="body">Mr. Tukaram Vitthal Kocharekar &amp; Mrs. Neha Kocharekar joyfully invite you to the engagement of their daughter</p>
+      <div class="who disp">Sakshi</div>
+      <div class="and"><i>with</i></div>
+      <div class="who disp" style="margin-top:0">Sanket</div>
+      <div class="par">son of Mrs. Shubhangi &amp; Mr. Subhash Ramchandra Khedekar</div>
+      <p class="body">Sakharpuda — literally “a packet of sugar” — is our Maharashtrian engagement. Your presence and blessings would mean the world to us.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band visit" id="visit">
+  <div class="wrap">
+    <h2 class="disp"><span class="mr">स्थळ</span><span class="en">The venue</span></h2>
+    <p style="margin:12px 0 0;font-size:19px"><span class="mr">पराग हॉल, शिवाजी तलावाजवळ, सह्याद्री शाळेसमोर,<br>भांडुप (प.), मुंबई – ४०००७८</span><span class="en">Parag Hall, Near Shivaji Talao, Opp. Sahyadri School,<br>Bhandup (West), Mumbai 400078</span></p>
+    <div class="btns">
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Parag+Hall+Shivaji+Talao+Bhandup+West+Mumbai+400078" target="_blank" rel="noopener"><span class="mr">नकाशा उघडा</span><span class="en">Get directions</span></a>
+      <a class="btn" href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Sakshi+%26+Sanket+%E2%80%94+Sakharpuda&dates=20270207T113000Z/20270207T153000Z&location=Parag+Hall,+Near+Shivaji+Talao,+Opp.+Sahyadri+School,+Bhandup+(West),+Mumbai+400078&details=Sakshi+%26+Sanket%27s+engagement+(Sakharpuda)" target="_blank" rel="noopener"><span class="mr">कॅलेंडरमध्ये जोडा</span><span class="en">Add to calendar</span></a>
+    </div>
+    <h2 class="disp" style="margin-top:56px"><span class="mr">तुम्ही येताय ना?</span><span class="en">Will you be there?</span></h2>
+    <div class="btns"><a class="btn main" id="rsvp" href="#visit"><span class="mr">उपस्थिती कळवा</span><span class="en">RSVP</span></a></div>
+    <div class="note" id="rsvpNote" aria-live="polite"></div>
+  </div>
+</section>
+<div class="kath up"></div>
+
+<section class="band fun" id="fun">
+  <div class="wrap">
+    <h2 class="disp"><span class="mr">धाकट्याचा कट्टा</span><span class="en">Little brother’s corner</span></h2>
+    <p class="sub"><span class="mr">इथून पुढचं सगळं अथर्वच्या जबाबदारीवर!</span><span class="en">Everything below is entirely Atharva’s responsibility.</span></p>
+    <button class="danger wiggle" id="danger"><span class="d1"><span class="mr">धोक्याचं बटण<br>दाबू नका!</span><span class="en">Danger button<br>do NOT press</span></span><span class="d2"><span class="mr">म्हटलं होतं,<br>दाबू नका!</span><span class="en">Told you<br>not to!</span></span></button>
+    <div class="funbox" id="funbox" hidden>
+      <div class="fcard">
+        <h3 class="disp"><span class="mr">साखरपुड्याला येण्याच्या अटी व शर्ती</span><span class="en">Terms &amp; conditions of attendance</span></h3>
+        <ol class="mr">
+          <li>नाचावं लागेल. “माझा पाय दुखतोय” हे कारण चालणार नाही.</li>
+          <li>फोटोसाठी किमान ३ पोझ तयार ठेवा.</li>
+          <li>पहिली मिठाई वधू-वरांना, दुसरी अथर्वला.</li>
+          <li>साक्षीचे मित्र-मैत्रिणी विरुद्ध संकेतचे मित्र-मैत्रिणी — डान्स-ऑफचा निकाल स्टेजवर जाहीर होईल.</li>
+        </ol>
+        <ol class="en">
+          <li>You will have to dance. “My leg hurts” is not an accepted excuse.</li>
+          <li>Keep at least 3 photo poses ready.</li>
+          <li>First sweet goes to the couple, the second to Atharva.</li>
+          <li>Sakshi’s friends vs Sanket’s friends — dance-off results will be announced on stage.</li>
+        </ol>
+      </div>
+      <div class="fcard pred">
+        <h3 class="disp"><span class="mr">AI मॉडेलचा अंदाज</span><span class="en">The AI model’s predictions</span></h3>
+        <div class="row"><span><span class="mr">अथर्व सगळ्यात आधी नाचणार</span><span class="en">Atharva dances first</span></span><b><span class="mr">९९.७%</span><span class="en">99.7%</span></b></div>
+        <div class="row"><span><span class="mr">अथर्व भावुक होणार (आणि नंतर नाकारणार)</span><span class="en">Atharva gets emotional (and later denies it)</span></span><b><span class="mr">८५%</span><span class="en">85%</span></b></div>
+        <div class="row"><span><span class="mr">नाचणाऱ्यांची संख्या · अनिश्चितता: शून्य</span><span class="en">Number of dancers · uncertainty: zero</span></span><b><span class="mr">सगळे</span><span class="en">Everyone</span></b></div>
+        <small><span class="mr">जन्मापासूनच्या सगळ्या कौटुंबिक कार्यक्रमांवर प्रशिक्षित मॉडेल. — अथर्व, AI विद्यार्थी</span><span class="en">Model trained on every family function since birth. — Atharva, AI student</span></small>
+      </div>
+      <div class="fcard ready">
+        <h3 class="disp"><span class="mr">डान्स-फ्लोअर तयारी मीटर</span><span class="en">Dance-floor readiness meter</span></h3>
+        <div class="r"><div class="lbl"><span><span class="mr">साक्षीचे मित्र-मैत्रिणी</span><span class="en">Sakshi’s friends</span></span><span><span class="mr">१००%</span><span class="en">100%</span></span></div><div class="rail"><div class="bar" data-v="100"></div></div></div>
+        <div class="r"><div class="lbl"><span><span class="mr">संकेतचे मित्र-मैत्रिणी</span><span class="en">Sanket’s friends</span></span><span><span class="mr">१००%</span><span class="en">100%</span></span></div><div class="rail"><div class="bar" data-v="100"></div></div></div>
+        <div class="r"><div class="lbl"><span><span class="mr">भावंडं</span><span class="en">Cousins</span></span><span><span class="mr">१५०%</span><span class="en">150%</span></span></div><div class="rail"><div class="bar" data-v="150" style="background:#C9406B"></div></div></div>
+        <div class="r"><div class="lbl"><span><span class="mr">अथर्व</span><span class="en">Atharva</span></span><span><span class="mr">३००%</span><span class="en">300%</span></span></div><div class="rail"><div class="bar over" data-v="300"></div></div></div>
+        <small><span class="mr">मीटर तुटलं आहे. दुरुस्त करण्याचा कोणताही विचार नाही.</span><span class="en">The meter is broken. There are no plans to fix it.</span></small>
+      </div>
+    </div>
+  </div>
+</section>
+<div class="kath"></div>
+
+<footer class="band foot">
+  <div class="wrap">
+    <div class="gold"><span class="mr">✻ आपले स्नेहांकित ✻</span><span class="en">With love</span></div>
+    <div class="disp" style="font-size:24px;margin-top:6px"><span class="mr">श्री. तुकाराम विठ्ठल कोचरेकर · सौ. नेहा तुकाराम कोचरेकर</span><span class="en">Tukaram &amp; Neha Kocharekar</span></div>
+    <div class="mr" style="margin-top:26px">
+      <div class="gold" style="font-size:15px"><i>वरील विनंतीस मान देऊन अगत्य येण्याची कृपा करावी.</i></div>
+      <div class="hosts">
+        <span>श्री. मीनानाथ महादेव पराडकर</span><span>सौ. शुभदा मीनानाथ पराडकर</span>
+        <span>श्री. महेश विष्णू कुपकर (मावसे)</span><span>सौ. माही महेश कुपकर (मावशी)</span>
+        <span>श्री. मिलिंद मीनानाथ पराडकर (मामा)</span><span>सौ. मीनाक्षी मिलिंद पराडकर (मामी)</span>
+        <span>गं. भा. अपर्णा अरुण केरकर (आत्या)</span><span>समस्त कोचरेकर परिवार आणि आप्तेष्ट मित्रमंडळी</span>
+      </div>
+    </div>
+    <div class="kid hand"><span class="mr">माझ्या ताईच्या साखरपुड्याला यायचं हं…! — कु. अथर्व व हर्षिता</span><span class="en">“Do come for my Tai’s engagement!” — Atharva &amp; Harshita</span></div>
+    <div class="made"><span class="mr">ताईसाठी प्रेमाने बनवले — अथर्व</span><span class="en">Made with love for Tai — Atharva</span></div>
+  </div>
+</footer>
+</main>
+
+<audio id="meme" src="indian-song.mp3" preload="auto"></audio>
+
+<div class="modal" id="secret" hidden role="dialog" aria-modal="true" aria-labelledby="secretTitle">
+  <div class="paper">
+    <h3 class="disp" id="secretTitle"><span class="mr">गुपित सापडलं!</span><span class="en">You found the secret!</span></h3>
+    <p class="mr" style="margin:0">ताई, लहानपणापासून माझे सगळे हट्ट तू पुरवलेस आणि माझी सगळी भांडणं तू सोडवलीस. आता नवीन प्रवास सुरू होतोय, पण लक्षात ठेव — तुझा हा खोडकर भाऊ नेहमी तुझ्या पाठीशी आहे. संकेत दादा, तिला खूप जपा… नाहीतर माझ्याशी गाठ आहे!</p>
+    <p class="en" style="margin:0">Tai, you put up with every tantrum and settled every fight of mine since we were kids. A new journey begins now, but your mischievous little brother is always right behind you. Sanket dada, take good care of her… or you’ll have me to deal with!</p>
+    <div class="hand" style="margin-top:12px;font-size:19px;color:var(--mag)"><span class="mr">— तुझा अथर्व</span><span class="en">— your Atharva</span></div>
+    <button class="btn main" id="secretClose"><span class="mr">बंद करा</span><span class="en">Close</span></button>
+  </div>
+</div>
+
+<script>
+{
+  // ── Settings to edit ──
+  const EVENT = new Date('2027-02-07T17:00:00+05:30');
+  const END = new Date('2027-02-07T21:00:00+05:30');
+  const START = new Date('2026-10-01T00:00:00+05:30'); // the day the journey "began" — set to the day the match was fixed
+  const RSVP_URL = 'https://docs.google.com/forms/d/1Xx89RPyTwSBwd80WVKDL7_SnLZ9LQZ5HYtZ6c4TOv3g/viewform'; // Google Form RSVP
+
+  const body = document.body;
+  const dev = s => String(s).replace(/\d/g, d => '०१२३४५६७८९'[d]);
+  const num = n => body.classList.contains('en') ? String(n) : dev(n);
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // language
+  const bMr = document.getElementById('bMr'), bEn = document.getElementById('bEn');
+  function setLang(l) {
+    body.classList.toggle('en', l === 'en');
+    document.documentElement.lang = l === 'en' ? 'en' : 'mr';
+    bMr.setAttribute('aria-pressed', l !== 'en'); bEn.setAttribute('aria-pressed', l === 'en');
+    try { localStorage.setItem('ss-lang', l); } catch (e) {}
+    tick(); drawTrack(shown);
+  }
+  bMr.addEventListener('click', () => setLang('mr'));
+  bEn.addEventListener('click', () => setLang('en'));
+
+  // pouch intro
+  const intro = document.getElementById('intro'), sugar = document.getElementById('sugar');
+  for (let i = 0; i < 16; i++) {
+    const a = -Math.PI / 2 + (i / 15 - 0.5) * 2.4, r = 90 + (i * 37) % 80;
+    const s = document.createElement('i');
+    s.style.setProperty('--x', Math.round(Math.cos(a) * r) + 'px');
+    s.style.setProperty('--y', Math.round(Math.sin(a) * r) + 'px');
+    s.style.animationDelay = (i % 5) * 40 + 'ms';
+    sugar.appendChild(s);
+  }
+  document.getElementById('untie').addEventListener('click', () => {
+    intro.classList.add('open');
+    setTimeout(() => body.classList.remove('locked'), reduce ? 300 : 1500);
+  });
+
+  // countdown
+  const cD = document.getElementById('cD'), cH = document.getElementById('cH'), cM = document.getElementById('cM'), cS = document.getElementById('cS');
+  const count = document.getElementById('count'), done = document.getElementById('done');
+  function tick() {
+    const now = new Date(), ms = EVENT - now;
+    if (ms <= 0) {
+      count.hidden = true; done.hidden = false;
+      done.textContent = now < END
+        ? (body.classList.contains('en') ? 'It’s today — see you at Parag Hall!' : 'आज साखरपुडा — पराग हॉलवर भेटूया!')
+        : (body.classList.contains('en') ? 'Thank you for your blessings!' : 'आपल्या शुभाशीर्वादांबद्दल मनःपूर्वक धन्यवाद!');
+      return;
+    }
+    const t = Math.floor(ms / 1000), p = n => String(n).padStart(2, '0');
+    cD.textContent = num(Math.floor(t / 86400)); cH.textContent = num(p(Math.floor(t / 3600) % 24));
+    cM.textContent = num(p(Math.floor(t / 60) % 60)); cS.textContent = num(p(t % 60));
+  }
+  tick(); setInterval(tick, 1000);
+
+  // journey tracker
+  const rS = document.getElementById('rS'), rK = document.getElementById('rK');
+  const dS = document.getElementById('dS'), dK = document.getElementById('dK');
+  const LS = rS.getTotalLength(), LK = rK.getTotalLength();
+  const target = Math.min(1, Math.max(0, (Date.now() - START) / (EVENT - START)));
+  let shown = 0;
+  [[rS, LS], [rK, LK]].forEach(([r, L]) => { r.style.strokeDasharray = L; r.style.strokeDashoffset = L; });
+  function place(g, r, L, f) {
+    const pt = r.getPointAtLength(L * f);
+    g.setAttribute('transform', 'translate(' + pt.x.toFixed(1) + ' ' + pt.y.toFixed(1) + ')');
+  }
+  function drawTrack(f) {
+    rS.style.strokeDashoffset = LS * (1 - f); rK.style.strokeDashoffset = LK * (1 - f);
+    place(dS, rS, LS, f); place(dK, rK, LK, f);
+    const pct = Math.round(f * 100), days = Math.max(0, Math.ceil((EVENT - Date.now()) / 86400000));
+    document.getElementById('pct').textContent = num(pct) + '%';
+    document.getElementById('trackNote').textContent = body.classList.contains('en')
+      ? (days ? days + ' days to go — the two routes meet at Bhandup on 7 February.' : 'The journeys have met. Welcome to Bhandup!')
+      : (days ? 'भेट अजून ' + dev(days) + ' दिवसांनी — ७ फेब्रुवारीला दोन्ही मार्ग भांडुपला जुळतील.' : 'प्रवास पूर्ण झाला — भांडुपला स्वागत!');
+  }
+  drawTrack(0);
+  const fill = document.getElementById('fill');
+  const io = new IntersectionObserver(es => {
+    if (!es.some(e => e.isIntersecting)) return;
+    io.disconnect(); fill.style.width = (target * 100) + '%';
+    if (reduce) { shown = target; drawTrack(target); return; }
+    const t0 = performance.now();
+    const step = now => {
+      const k = Math.min(1, (now - t0) / 1600), e = 1 - (1 - k) ** 3;
+      shown = target * e; drawTrack(shown);
+      if (k < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  }, { threshold: 0.35 });
+  document.getElementById('untie').addEventListener('click', () => io.observe(document.querySelector('.map')));
+
+  // RSVP
+  const rsvp = document.getElementById('rsvp'), note = document.getElementById('rsvpNote');
+  if (RSVP_URL) { rsvp.href = RSVP_URL; rsvp.target = '_blank'; rsvp.rel = 'noopener'; }
+  else rsvp.addEventListener('click', e => {
+    e.preventDefault();
+    note.textContent = body.classList.contains('en') ? 'The RSVP form is coming soon.' : 'उपस्थिती फॉर्म लवकरच येत आहे.';
+  });
+
+  // dhol beat, synthesised (no recordings, no copyright)
+  let ac = null, noise = null;
+  function dhol() {
+    try { ac = ac || new (window.AudioContext || window.webkitAudioContext)(); } catch (e) { return; }
+    if (ac.state === 'suspended') ac.resume();
+    if (!noise) {
+      noise = ac.createBuffer(1, Math.floor(ac.sampleRate * 0.3), ac.sampleRate);
+      const d = noise.getChannelData(0); for (let i = 0; i < d.length; i++) d[i] = Math.random() * 2 - 1;
+    }
+    const dha = (t, v = 0.9) => {
+      const o = ac.createOscillator(), g = ac.createGain();
+      o.frequency.setValueAtTime(110, t); o.frequency.exponentialRampToValueAtTime(48, t + 0.35);
+      g.gain.setValueAtTime(0.0001, t); g.gain.exponentialRampToValueAtTime(v, t + 0.01); g.gain.exponentialRampToValueAtTime(0.001, t + 0.45);
+      o.connect(g).connect(ac.destination); o.start(t); o.stop(t + 0.5);
+    };
+    const tin = (t, v = 0.35) => {
+      const s = ac.createBufferSource(), f = ac.createBiquadFilter(), g = ac.createGain();
+      s.buffer = noise; f.type = 'bandpass'; f.frequency.value = 2600; f.Q.value = 1.2;
+      g.gain.setValueAtTime(v, t); g.gain.exponentialRampToValueAtTime(0.001, t + 0.09);
+      s.connect(f).connect(g).connect(ac.destination); s.start(t); s.stop(t + 0.12);
+    };
+    const t0 = ac.currentTime + 0.05, step = 0.12, pat = 'D.ttD.tDD.ttDttt';
+    for (let r = 0; r < 2; r++) [...pat].forEach((c, i) => {
+      const t = t0 + (r * 16 + i) * step;
+      if (c === 'D') dha(t); else if (c === 't') tin(t);
+    });
+    const tEnd = t0 + 32 * step;
+    for (let i = 0; i < 8; i++) tin(tEnd + i * 0.06, 0.18 + i * 0.03);
+    dha(tEnd + 0.5, 1);
+  }
+  function confetti() {
+    if (reduce) return;
+    const box = document.createElement('div'), cols = ['#D9B062', '#8E1E52', '#2F7A45', '#FBF5EA', '#C9406B'];
+    box.className = 'confetti';
+    for (let i = 0; i < 48; i++) {
+      const c = document.createElement('i');
+      c.style.left = Math.random() * 100 + 'vw';
+      c.style.background = cols[i % cols.length];
+      c.style.setProperty('--dx', Math.round(Math.random() * 140 - 70) + 'px');
+      c.style.setProperty('--d', (2.2 + Math.random() * 1.6).toFixed(2) + 's');
+      c.style.setProperty('--w', (Math.random() * 0.5).toFixed(2) + 's');
+      box.appendChild(c);
+    }
+    document.body.appendChild(box);
+    setTimeout(() => box.remove(), 4800);
+  }
+  const danger = document.getElementById('danger'), funbox = document.getElementById('funbox');
+  const meme = document.getElementById('meme');
+  danger.addEventListener('click', () => {
+    confetti();
+    if (danger.classList.contains('pressed')) { meme.pause(); dhol(); return; }
+    try { meme.currentTime = 0; meme.play().catch(dhol); } catch (e) { dhol(); }
+    danger.classList.add('pressed'); danger.classList.remove('wiggle');
+    funbox.hidden = false;
+    requestAnimationFrame(() => requestAnimationFrame(() =>
+      funbox.querySelectorAll('.bar').forEach(b => { b.style.width = b.dataset.v + '%'; })));
+  });
+
+  // secret note: tap the monogram 5 times
+  const mark = document.getElementById('mark'), secret = document.getElementById('secret'), closeS = document.getElementById('secretClose');
+  let taps = 0, tapTimer = null;
+  mark.addEventListener('click', () => {
+    taps++; clearTimeout(tapTimer); tapTimer = setTimeout(() => { taps = 0; }, 2500);
+    if (taps >= 5) { taps = 0; secret.hidden = false; closeS.focus(); dhol(); }
+  });
+  const shut = () => { secret.hidden = true; mark.focus(); };
+  closeS.addEventListener('click', shut);
+  secret.addEventListener('click', e => { if (e.target === secret) shut(); });
+  secret.addEventListener('keydown', e => { if (e.key === 'Escape') shut(); });
+
+  // start language: #en link, then saved choice
+  let saved = null; try { saved = localStorage.getItem('ss-lang'); } catch (e) {}
+  setLang(location.hash === '#en' ? 'en' : (saved || 'mr'));
+}
+</script>
+</body>
+</html>
